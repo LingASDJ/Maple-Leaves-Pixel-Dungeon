@@ -1,9 +1,9 @@
 # 枫叶像素地牢
 合作项目，主要是代码编写。
 ---
-> 代码编写：JDSALing
-> 辅助帮忙：六花花
-> 代码指导：Shower SmuJB Evan TrashBoxlev Juh9870
+> 代码编写：JDSALing  
+> 辅助帮忙：六花花  
+> 代码指导：Shower SmuJB Evan TrashBoxlev Juh9870  
 ---
 <h1>注意：</h1>
 这个项目还没有正式完成，但还需要时间。
