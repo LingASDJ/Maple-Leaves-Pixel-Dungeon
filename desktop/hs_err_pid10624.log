@@ -1,0 +1,193 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 257949696 bytes for Failed to commit area from 0x000000070a000000 to 0x0000000719600000 of length 257949696.
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (t:/workspace/open/src/hotspot/os/windows/os_windows.cpp:3269), pid=10624, tid=12460
+#
+# JRE version:  (11.0+28) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (11+28, mixed mode, aot, sharing, tiered, compressed oops, g1 gc, windows-amd64)
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -DImplementation-Version=648 -DSpecification-Title=Shattered Pixel Dungeon -DSpecification-Version=1.3.2-INDEV -Dfile.encoding=UTF-8 -Duser.country=CN -Duser.language=zh -Duser.variant com.shatteredpixel.shatteredpixeldungeon.desktop.DesktopLauncher
+
+Host: AMD Ryzen 7 4800H with Radeon Graphics         , 16 cores, 15G,  Windows 10 , 64 bit Build 19041 (10.0.19041.1889)
+Time: Sun Oct  2 21:39:01 2022 中国标准时间 elapsed time: 0 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000001cdd7c69800):  JavaThread "Unknown thread" [_thread_in_vm, id=12460, stack(0x00000050d4800000,0x00000050d4900000)]
+
+Stack: [0x00000050d4800000,0x00000050d4900000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x63c22a]
+V  [jvm.dll+0x7797ef]
+V  [jvm.dll+0x77adda]
+V  [jvm.dll+0x77b493]
+V  [jvm.dll+0x262818]
+V  [jvm.dll+0x6396da]
+V  [jvm.dll+0x62dfb5]
+V  [jvm.dll+0x31699c]
+V  [jvm.dll+0x316822]
+V  [jvm.dll+0x31c096]
+V  [jvm.dll+0x3684af]
+V  [jvm.dll+0x367ed0]
+V  [jvm.dll+0x2f38b8]
+V  [jvm.dll+0x2f4a16]
+V  [jvm.dll+0x752db7]
+V  [jvm.dll+0x7544ff]
+V  [jvm.dll+0x3752e9]
+V  [jvm.dll+0x7394b9]
+V  [jvm.dll+0x3e46fd]
+V  [jvm.dll+0x3e69d1]
+C  [java.exe+0x3603]
+C  [java.exe+0x178dc]
+C  [KERNEL32.DLL+0x17034]
+C  [ntdll.dll+0x52651]
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x000001cdd5b3c7d0, length=0, elements={
+}
+
+Java Threads: ( => current thread )
+
+Other Threads:
+  0x000001cdd7c7e000 GCTaskThread "GC Thread#0" [stack: 0x00000050d4900000,0x00000050d4a00000] [id=16360]
+  0x000001cdd7cda000 ConcurrentGCThread "G1 Main Marker" [stack: 0x00000050d4a00000,0x00000050d4b00000] [id=20724]
+  0x000001cdd7cdb000 ConcurrentGCThread "G1 Conc#0" [stack: 0x00000050d4b00000,0x00000050d4c00000] [id=23292]
+
+[error occurred during error reporting (printing all threads), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ff8e2ed2137]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x000001cdd7c644e0] Heap_lock - owner thread: 0x000001cdd7c69800
+
+Heap address: 0x000000070a000000, size: 3936 MB, Compressed Oops mode: Non-zero based: 0x000000070a000000
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 0
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x00007ff70d680000 - 0x00007ff70d6c7000 	C:\Program Files\Java\jdk-11\bin\java.exe
+0x00007ff983750000 - 0x00007ff983948000 	C:\Windows\SYSTEM32\ntdll.dll
+0x00007ff983100000 - 0x00007ff9831bd000 	C:\Windows\System32\KERNEL32.DLL
+0x00007ff981330000 - 0x00007ff9815fe000 	C:\Windows\System32\KERNELBASE.dll
+0x00007ff982610000 - 0x00007ff9826be000 	C:\Windows\System32\ADVAPI32.dll
+0x00007ff983260000 - 0x00007ff9832fe000 	C:\Windows\System32\msvcrt.dll
+0x00007ff982800000 - 0x00007ff98289c000 	C:\Windows\System32\sechost.dll
+0x00007ff983300000 - 0x00007ff983425000 	C:\Windows\System32\RPCRT4.dll
+0x00007ff981e30000 - 0x00007ff981fd0000 	C:\Windows\System32\USER32.dll
+0x00007ff980f80000 - 0x00007ff980fa2000 	C:\Windows\System32\win32u.dll
+0x00007ff9830a0000 - 0x00007ff9830ca000 	C:\Windows\System32\GDI32.dll
+0x00007ff980e70000 - 0x00007ff980f7b000 	C:\Windows\System32\gdi32full.dll
+0x00007ff980fb0000 - 0x00007ff98104d000 	C:\Windows\System32\msvcp_win.dll
+0x00007ff981600000 - 0x00007ff981700000 	C:\Windows\System32\ucrtbase.dll
+0x00007ff96f070000 - 0x00007ff96f30a000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.1110_none_60b5254171f9507e\COMCTL32.dll
+0x00007ff976a00000 - 0x00007ff976a0a000 	C:\Windows\SYSTEM32\VERSION.dll
+0x00007ff9830d0000 - 0x00007ff983100000 	C:\Windows\System32\IMM32.DLL
+0x00007ff938750000 - 0x00007ff938766000 	C:\Program Files\Java\jdk-11\bin\vcruntime140.dll
+0x00007ff91d7a0000 - 0x00007ff91d84a000 	C:\Program Files\Java\jdk-11\bin\msvcp140.dll
+0x00007ff8e2bd0000 - 0x00007ff8e3712000 	C:\Program Files\Java\jdk-11\bin\server\jvm.dll
+0x00007ff9823e0000 - 0x00007ff9823e8000 	C:\Windows\System32\PSAPI.DLL
+0x00007ff975ce0000 - 0x00007ff975d07000 	C:\Windows\SYSTEM32\WINMM.dll
+0x00007ff96ffa0000 - 0x00007ff96ffa9000 	C:\Windows\SYSTEM32\WSOCK32.dll
+0x00007ff983430000 - 0x00007ff98349b000 	C:\Windows\System32\WS2_32.dll
+0x00007ff97f700000 - 0x00007ff97f712000 	C:\Windows\SYSTEM32\kernel.appcore.dll
+0x00007ff925140000 - 0x00007ff925151000 	C:\Program Files\Java\jdk-11\bin\verify.dll
+0x00007ff97ef60000 - 0x00007ff97f144000 	C:\Windows\SYSTEM32\DBGHELP.DLL
+0x00007ff96f740000 - 0x00007ff96f76c000 	C:\Windows\SYSTEM32\dbgcore.DLL
+0x00007ff9812a0000 - 0x00007ff981322000 	C:\Windows\System32\bcryptPrimitives.dll
+0x00007ff91d940000 - 0x00007ff91d969000 	C:\Program Files\Java\jdk-11\bin\java.dll
+0x00007ff9250e0000 - 0x00007ff9250f6000 	C:\Program Files\Java\jdk-11\bin\zip.dll
+0x00007ff9542c0000 - 0x00007ff9542ca000 	C:\Program Files\Java\jdk-11\bin\jimage.dll
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;C:\Program Files\Java\jdk-11\bin;C:\Windows\SYSTEM32;C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.1110_none_60b5254171f9507e;C:\Program Files\Java\jdk-11\bin\server
+
+VM Arguments:
+jvm_args: -DImplementation-Version=648 -DSpecification-Title=Shattered Pixel Dungeon -DSpecification-Version=1.3.2-INDEV -Dfile.encoding=UTF-8 -Duser.country=CN -Duser.language=zh -Duser.variant 
+java_command: com.shatteredpixel.shatteredpixeldungeon.desktop.DesktopLauncher
+java_class_path (initial): D:\shattered-pixel-dungeon-1.3.2\shattered-pixel-dungeon-1.3.2\desktop\build\classes\java\main;D:\shattered-pixel-dungeon-1.3.2\shattered-pixel-dungeon-1.3.2\desktop\build\resources\main;D:\shattered-pixel-dungeon-1.3.2\shattered-pixel-dungeon-1.3.2\core\build\libs\core-1.3.2.jar;D:\shattered-pixel-dungeon-1.3.2\shattered-pixel-dungeon-1.3.2\services\updates\githubUpdates\build\libs\githubUpdates-1.3.2.jar;D:\shattered-pixel-dungeon-1.3.2\shattered-pixel-dungeon-1.3.2\services\news\shatteredNews\build\libs\shatteredNews-1.3.2.jar;D:\shattered-pixel-dungeon-1.3.2\shattered-pixel-dungeon-1.3.2\SPD-classes\build\libs\SPD-classes-1.3.2.jar;C:\Users\honor\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx-freetype\1.11.0\a3634ad2e6c56d251268d6ab5c0f66eee2841f2c\gdx-freetype-1.11.0.jar;C:\Users\honor\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx-backend-lwjgl3\1.11.0\58a96db4cd349be4292d547856aa1e1c5f065f4e\gdx-backend-lwjgl3-1.11.0.jar;C:\Users\honor\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx-platform\1.11.0\697fb13eada6d3c6ca648c9788692b0159add126\gdx-platform-1.11.0-natives-desktop.jar;C:\Users\honor\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx-freetype-platform\1.11.0\420e2c2c206843a0d51010be28a141a1eb946235\gdx-freetype-platform-1.11.0-natives-desktop.jar;C:\Users\honor\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx-controllers\gdx-controllers-desktop\2.2.2\625b3bdbe803e9c4af181b4791202cfcf776d805\gdx-controllers-desktop-2.2.2.jar;C:\Users\honor\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-tinyfd\3.3.1\ff1914111ef2e3e0110ef2dabc8d8cdaad82347\lwjgl-tinyfd-3.3.1.jar;C:\Users\honor\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-tinyfd\3.3.1\a5d830475ec0958d9fdba1559efa99aef211e6ff\lwjgl-tinyfd-3.3.1-natives-windows.jar;C:\Users\honor\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-tinyfd\3.3.1\78641a0fa5e9afa714adfdd152c357930c97a1ce\lwjgl-tinyfd-3.3.1-natives-
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     intx CICompilerCount                          = 12                                        {product} {ergonomic}
+     uint ConcGCThreads                            = 3                                         {product} {ergonomic}
+     uint G1ConcRefinementThreads                  = 13                                        {product} {ergonomic}
+   size_t G1HeapRegionSize                         = 1048576                                   {product} {ergonomic}
+    uintx GCDrainStackTargetSize                   = 64                                        {product} {ergonomic}
+   size_t InitialHeapSize                          = 257949696                                 {product} {ergonomic}
+   size_t MarkStackSize                            = 4194304                                   {product} {ergonomic}
+   size_t MaxHeapSize                              = 4127195136                                {product} {ergonomic}
+   size_t MinHeapDeltaBytes                        = 1048576                                   {product} {ergonomic}
+    uintx NonNMethodCodeHeapSize                   = 7591728                                {pd product} {ergonomic}
+    uintx NonProfiledCodeHeapSize                  = 122033256                              {pd product} {ergonomic}
+    uintx ProfiledCodeHeapSize                     = 122033256                              {pd product} {ergonomic}
+    uintx ReservedCodeCacheSize                    = 251658240                              {pd product} {ergonomic}
+     bool SegmentedCodeCache                       = true                                      {product} {ergonomic}
+     bool UseCompressedClassPointers               = true                                 {lp64_product} {ergonomic}
+     bool UseCompressedOops                        = true                                 {lp64_product} {ergonomic}
+     bool UseG1GC                                  = true                                      {product} {ergonomic}
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags
+ #1: stderr all=off uptime,level,tags
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk-11
+CLASSPATH=D:\shattered-pixel-dungeon-1.3.2\shattered-pixel-dungeon-1.3.2\\gradle\wrapper\gradle-wrapper.jar
+PATH=C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk-11\bin;C:\Program Files\Java\jdk-11\jre\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files\Bandizip\;C:\Ruby26-x64\bin;C:\Users\honor\AppData\Local\Microsoft\WindowsApps;D:\Users\honor\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\honor\.dotnet\tools;D:\Program Files\JetBrains\CLion 2021.3.1\bin;;D:\Program Files\JetBrains\PyCharm 2021.3\bin;;D:\Program Files\JetBrains\IntelliJ IDEA 2021.3.1\bin;;D:\Program Files\JetBrains\WebStorm 2021.3\bin;;D:\Program Files\JetBrains\PhpStorm 2021.3\bin;;C:\Users\honor\AppData\Local\GitHubDesktop\bin
+USERNAME=honor
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10 , 64 bit Build 19041 (10.0.19041.1889)
+
+CPU:total 16 (initial active 16) (16 cores per cpu, 2 threads per core) family 23 model 96 stepping 1, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, mmxext, 3dnowpref, lzcnt, sse4a, ht, tsc, tscinvbit, tscinv, bmi1, bmi2, adx, sha, fma
+
+Memory: 4k page, system-wide physical 15741M (2310M free)
+TotalPageFile size 19837M (AvailPageFile size 241M)
+current process WorkingSet (physical memory assigned to process): 10M, peak: 10M
+current process commit charge ("private bytes"): 71M, peak: 317M
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (11+28) for windows-amd64 JRE (11+28), built on Aug 23 2018 03:03:59 by "mach5one" with MS VC++ 15.5 (VS2017)
+
+END.
