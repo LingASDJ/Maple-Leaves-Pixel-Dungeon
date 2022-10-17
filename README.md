@@ -1,5 +1,8 @@
 # Maple-Leaves-Pixel-Dungeon
 Cooperative projects, mainly for code writing.
+
+[**中文说明**](https://github.com/LingASDJ/Maple-Leaves-Pixel-Dungeon/blob/main/README_ZH.md)
+
 ---
 > Code:JDSA Ling  
 > Helper:SixFlower  
