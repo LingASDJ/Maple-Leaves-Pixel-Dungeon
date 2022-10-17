@@ -19,7 +19,7 @@ The general progress of this Project is:
 - [ ] Player Test  
 - [ ] Player aFeedback  
 - [ ] Final review  
->When the following button is activated, the localization ends
+>When the following button is activated, the projects is completed
 - [ ] Release Apk
 
 <h1>Maple-Leaves Pixel Dungeon-Dev-Team 2022</h1>
